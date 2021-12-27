@@ -7,7 +7,7 @@ import "./Home.css";
 const Data = () => {
     return(
         <div className='home'>
-            <h2>Products List</h2>
+            <h2>Products</h2>
             <Products data={products} key={products.id} />
         </div>
     )
