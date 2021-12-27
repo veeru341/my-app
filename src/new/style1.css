@@ -1,0 +1,39 @@
+.login {
+  position: absolute;
+  top: 40%;
+  left: 42%;
+  width: 200px;
+  height: 250px;
+  background-color: green;
+  border-radius: 20px 0px 20px 0px;
+}
+h2 {
+  color: white;
+  text-align: center;
+  margin-top: 5px;
+}
+input {
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+button {
+  width: 170px;
+  margin-left: 15px;
+  margin-top: 25px;
+}
+.hai {
+  color: white;
+  font-size: 10px;
+}
+
+
+
+export const reducer = ({state, action}) => {
+    switch(action.type){
+      case "ADD_TO_CART":
+        return {...state,
+          cart: [...state, action.payload]
+        }
+    }
+}
